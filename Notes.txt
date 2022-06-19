@@ -1,0 +1,22 @@
+Install Typescript: 
+    npm install -g typescript@4.2.4
+    npm install --save-dev typescript@4.2.4
+
+
+"include": // target files or folder
+"watchOptions": // always update the binary code from the target directory whenever there's changes on ts files.
+
+Base Configuration
+- collection of compiler and values
+- can be overwritten
+
+"extends": // specify which lib/polyfills should be included in build
+
+Multi-file Compilation
+- create one js file for every target ts file
+- each file must be loaded for the app to work in browser
+
+Single-file Compilation
+- combines all ts file into one single js file
+- only single file must be loaded for the app to work in browser
+- webpack, babel needed
